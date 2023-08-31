@@ -10,8 +10,7 @@ const Product = async () => {
         <div>All Products</div>
         <div className='flex gap-5 border-2'>
         {data.map((product: any, index:number) =>
-       <Link href={`/products/${product.slug.current}`} key={index} className='flex gap-5'>
-          
+       <Link href={`/products/${product.slug.current}`} key={index} className='flex gap-5'>   
           <div>
             <img src={urlForImage(product.image).url()} alt={product.title} width={400} height={400} />
             <h1>{product.title}</h1>
